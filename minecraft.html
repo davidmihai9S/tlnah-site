@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Minecraft Server Application · The LEGO Ninjago Animation Hub</title>
+  <meta name="description" content="Apply to join The LEGO Ninjago Animation Hub Minecraft server.">
+  <link rel="icon" href="https://i.imgur.com/V5Ntah6.jpeg">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<main class="container">
+  <header class="site-header">
+    <div class="logo"><img src="https://i.imgur.com/V5Ntah6.jpeg" alt="The LEGO Ninjago Animation Hub logo"></div>
+    <div class="grow"><h1>Minecraft Server Application ⚡</h1><p>The LEGO Ninjago Animation Hub</p></div>
+  </header>
+  <nav class="links"><a href="./">Staff</a><a href="minecraft" aria-current="page">Minecraft server</a></nav>
+
+  <section id="register" class="view">
+    <form id="registerForm" novalidate>
+      <label>Minecraft username<input id="minecraftUsername" autocomplete="off" minlength="3" maxlength="32" required></label>
+      <div class="grid">
+        <label>Discord User ID
+          <input id="discordId" inputmode="numeric" placeholder="123456789012345678" required>
+          <small>Discord → Settings → Advanced → Developer Mode, then right-click your name → Copy User ID.</small>
+        </label>
+        <label>Discord username
+          <input id="discordUser" placeholder="ninjamaster" autocapitalize="off" spellcheck="false" required>
+          <small>Your username, not your display name.</small>
+        </label>
+      </div>
+      <article class="terms" tabindex="0" aria-label="Agreement">
+          <h2>Minecraft Server Rules &amp; Code of Conduct Agreement</h2>
+          <p>This Minecraft Server Rules &amp; Code of Conduct Agreement (the “Agreement”) is entered into and made effective as of the date of electronic signing (the “Effective Date”) by and between the Parties defined below.</p>
+          
+          <h3>Parties to the Agreement</h3>
+          <p><strong>1. The Administration:</strong> The Server Owner(s) and Administrator(s) (collectively referred to as the “Administration” or “Management”). The Administration holds ultimate executive control over the Minecraft server, its assets, its world files, its plugins, and its infrastructure.</p>
+          <p><strong>2. The Player:</strong> The individual accessing the server, whose digital identity, unique account credentials, and Discord identity are recorded via the accompanying digital submission form (referred to as the “Player”, “User”, or “Member”).</p>
+          
+          <h3>Purpose &amp; Scope</h3>
+          <p>This Agreement serves as a binding community contract between the Administration and the Player. By submitting the electronic form, logging into the Minecraft server, or exercising any digital permissions associated with player access, the Player agrees to uphold the standards of fair play, security, respect, and active compliance detailed below.</p>
+          <p>Violation of any term in this agreement constitutes a breach of contract and will result in immediate disciplinary review, potentially leading to a temporary ban, permanent blacklisting, or enforcement actions through the Discord server court.</p>
+          
+          <h3>Section 1: Core Gameplay &amp; Property Protection</h3>
+          <p><strong>1.1 Prohibition of Griefing:</strong> The intentional destruction, alteration, or defacement of structures, landscapes, or property belonging to other players or the community is strictly prohibited.</p>
+          <p><strong>1.2 Chest Security &amp; Theft Restrictions:</strong> Looting, stealing, or unauthorized accessing of items stored within chests, containers, or private property is a breach of trust and server rules.</p>
+          <p><strong>1.3 Base Camping &amp; Territory Restrictions:</strong> Persistent camping around another player's base, spawn points, or trapping individuals is prohibited.</p>
+          <p><strong>1.4 Combat &amp; Random Killing:</strong> Unprovoked, random killing of players outside of designated combat zones or consensual PvP settings is strictly forbidden.</p>
+          <p><strong>1.5 Interpersonal Respect:</strong> All players must maintain a civil and respectful demeanor toward fellow community members at all times.</p>
+          
+          <h3>Section 2: Client Integrity &amp; Modifications</h3>
+          <p><strong>2.1 Unfair Client-Side Modifications:</strong> The use of unauthorized client-side modifications, hacked clients, unfair resource packs, or external tools that provide an unearned advantage over other players is strictly prohibited.</p>
+          
+          <h3>Section 3: Governing Law &amp; Discord Jurisdiction</h3>
+          <p><strong>3.1 Integration with Discord Regulations:</strong> All players are required to strictly follow the official Discord server rules. Additionally, any rulings, mandates, or verdicts issued by the Discord server court must be adhered to with full compliance.</p>
+          
+          <h3>Section 4: Execution &amp; Consent</h3>
+          <p>By checking the acknowledgment box and submitting, the Player certifies they have read, understood, and agreed to be bound by the terms of this Agreement, serving as a digital signature.</p>
+        </article>
+      <label class="check"><input type="checkbox" id="terms" required> I accept the terms and conditions.</label>
+      <label class="check"><input type="checkbox" id="risks" required> I acknowledge disciplinary risks.</label>
+      <label class="check"><input type="checkbox" id="signature" required> I agree this acts as my digital signature.</label>
+      <button type="submit">Submit application &amp; agreement</button>
+      <p class="notice" id="registerNotice" aria-live="polite"></p>
+    </form>
+  </section>
+
+  <section id="submitted" class="view hidden">
+    <div class="success-panel">
+      <div class="big">⛏️</div>
+      <h2>Application submitted</h2>
+      <p class="meta">An administrator will review it. Keep an eye on Discord for the decision.</p>
+    </div>
+  </section>
+</main>
+<script src="config.js"></script>
+<script src="assets/common.js"></script>
+<script src="assets/minecraft.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Staff Application · The LEGO Ninjago Animation Hub</title>
+  <meta name="description" content="Apply for staff at The LEGO Ninjago Animation Hub, or log in to the staff dashboard.">
+  <link rel="icon" href="https://i.imgur.com/V5Ntah6.jpeg">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<main class="container">
+  <header class="site-header">
+    <div class="logo"><img src="https://i.imgur.com/V5Ntah6.jpeg" alt="The LEGO Ninjago Animation Hub logo"></div>
+    <div class="grow"><h1>The LEGO Ninjago Animation Hub ⚡</h1><p>Staff application &amp; dashboard</p></div>
+  </header>
+  <nav class="links"><a href="./" aria-current="page">Staff</a><a href="minecraft">Minecraft server</a></nav>
+
+  <div class="tabs" role="tablist">
+    <button class="tab active" type="button" role="tab" data-view="register">Apply</button>
+    <button class="tab" type="button" role="tab" data-view="login">Log in</button>
+  </div>
+  <p id="statusBanner" class="banner hidden"></p>
+
+  <section id="register" class="view">
+    <form id="registerForm" novalidate>
+      <div class="grid">
+        <label>Portal username
+          <input id="username" autocomplete="username" minlength="3" maxlength="32" pattern="[A-Za-z0-9_\-]{3,32}" required>
+          <small>3–32 letters, numbers, _ or -</small>
+        </label>
+        <label>Password
+          <input id="password" type="password" autocomplete="new-password" minlength="12" required>
+          <small>12+ characters. Never reuse your Discord password.</small>
+        </label>
+      </div>
+      <div class="grid">
+        <label>Discord User ID
+          <input id="discordId" inputmode="numeric" placeholder="123456789012345678" required>
+          <small>Discord → Settings → Advanced → Developer Mode, then right-click your name → Copy User ID.</small>
+        </label>
+        <label>Discord username
+          <input id="discordUser" placeholder="ninjamaster" autocapitalize="off" spellcheck="false" required>
+          <small>Your username, not your display name.</small>
+        </label>
+      </div>
+      <article class="terms" tabindex="0" aria-label="Agreement"><h2>Staff Employment &amp; Code of Conduct Agreement</h2><p>This Staff Employment &amp; Code of Conduct Agreement (the “Agreement”) is entered into and made effective as of the date of electronic signing (the “Effective Date”) by and between the Parties defined below.</p><h3>Parties to the Agreement</h3><p><strong>1. The Administration:</strong> The Server Owner(s) and Co-Owner(s) (collectively referred to as the “Administration” or “Employer”). The Administration holds ultimate executive control over the community, its assets, its bots, its infrastructure, and its personnel.</p><p><strong>2. The Staff Member:</strong> The individual accepting the staff position, whose digital identity, unique Discord User ID, and assigned staff role are recorded via the accompanying digital submission form (referred to as the “Staff Member”, “Moderator”, or “Employee”).</p><h3>Purpose &amp; Scope</h3><p>This Agreement serves as a binding community contract between the Administration and the Staff Member. By submitting the electronic form, accepting a staff role, or exercising any digital permissions associated with a staff tier, the Staff Member agrees to uphold the standards of professionalism, security, confidentiality, and active service detailed below.</p><p>Violation of any term in this agreement constitutes a breach of contract and will result in immediate disciplinary review, potentially leading to immediate termination of staff status, revocation of all permissions, and a permanent ban from the community.</p><h3>Section 1: Core Conduct &amp; Behavioral Mandates</h3><p><strong>1.1 Mass Pinging &amp; Notification Restrictions:</strong> Authorization is required for mass pings. Unauthorized pings (@everyone, @here, etc.) disrupt the community and result in disciplinary review.</p><p><strong>1.2 Information Security and Non-Disclosure:</strong> Confidential information (reports, staff discussions, security measures) must not be leaked. Exceptions exist for non-sensitive, lighthearted content.</p><p><strong>1.3 Setting the Standard:</strong> Staff must adhere to all public rules. Role model behavior is expected; violations by staff carry double the standard penalty.</p><p><strong>1.4 Drama, Gossip, and Toxicity:</strong> Anti-gossip policies are strictly enforced. Internal disagreements must be handled privately; public arguments are prohibited.</p><p><strong>1.5 Professionalism in DMs:</strong> Interactions regarding server business must be polite, neutral, and professional.</p><p><strong>1.6 Readable Display Names and Fonts:</strong> Users may not use custom fonts, special characters, or stylized text that is difficult to read without effort. Display names and messages must remain clearly legible to the community and staff.</p><h3>Section 2: Limits of Authority &amp; Abuse of Power</h3><p><strong>2.1 Abuse of Power:</strong> Defined as incorrect or unjustified punishment, favoritism, or facilitating disruption. Proven abuse results in immediate termination and permanent blacklisting.</p><p><strong>2.2 Retaliatory and Unauthorized Punishments:</strong> Punishments must map to a rule violation and follow the standard escalation ladder (Warn → Mute → Kick → Ban).</p><p><strong>2.3 Unauthorized Configuration Changes:</strong> Staff may not alter channels, roles, or bot settings without explicit instruction.</p><h3>Section 3: Performance, Activity, &amp; Absence Guidelines</h3><p><strong>3.1 Active Status Requirements:</strong> Active service requires regular chat participation and consistent moderation. The “5-Day Rule” governs unexcused inactivity, and the “10-Day Criminal Case Rule” results in automatic review.</p><p><strong>3.2 Standard of Work:</strong> Tickets, support inquiries, and member reports must be resolved in a timely manner.</p><h3>Section 4: Account Security &amp; Server Protection</h3><p><strong>4.1 2FA Mandatory:</strong> All staff must have 2FA enabled. Compromised accounts must be reported immediately for temporary removal of permissions.</p><p><strong>4.2 Phishing and Scam Links:</strong> Vigilance is required. Malicious links must be deleted and the offender reported immediately.</p><h3>Section 5: Conflict of Interest &amp; Anti-Bribery</h3><p><strong>5.1 Anti-Bribery:</strong> Solicitation or acceptance of bribes, gifts, or currency for favors is strictly prohibited.</p><p><strong>5.2 Association and Conflict of Interest:</strong> Staff must remain impartial and must not hold conflicting positions in rival communities.</p><h3>Section 6: Offboarding &amp; Resignation</h3><p><strong>6.1 Resignation:</strong> Requires a minimum of ten (10) hours’ notice and the immediate surrender of all community assets and access.</p><h3>Section 7: Execution &amp; Consent</h3><p>By checking the acknowledgment box and submitting, the Staff Member certifies they have read, understood, and agreed to be bound by the terms of this Agreement, serving as a binding digital signature.</p></article>
+      <label class="check"><input type="checkbox" id="terms" required> I accept the terms and conditions.</label>
+      <label class="check"><input type="checkbox" id="risks" required> I acknowledge disciplinary risks.</label>
+      <label class="check"><input type="checkbox" id="signature" required> I agree this acts as my digital signature.</label>
+      <button type="submit">Submit application &amp; agreement</button>
+      <p class="notice" id="registerNotice" aria-live="polite"></p>
+    </form>
+  </section>
+
+  <section id="login" class="view hidden">
+    <form id="loginForm">
+      <p id="sessionLoginHint" class="notice"></p>
+      <label id="loginUsernameLabel">Portal username<input id="loginUsername" autocomplete="username" required></label>
+      <button type="button" id="differentAccount" class="text-btn hidden">Use a different account</button>
+      <label>Password<input id="loginPassword" type="password" autocomplete="current-password" required></label>
+      <button type="submit">Log in</button>
+      <p class="notice" id="loginNotice" aria-live="polite"></p>
+      <p class="meta">Forgot your password? Ask an administrator to reset it from the admin panel.</p>
+    </form>
+  </section>
+
+  <section id="submitted" class="view hidden">
+    <div class="success-panel">
+      <div class="big">✅</div>
+      <h2>Application submitted</h2>
+      <p class="meta">An administrator will review it soon. You'll get the staff role in Discord once you're approved, and then you can log in here.</p>
+    </div>
+  </section>
+</main>
+<footer class="site-footer"><a href="admin">Admin</a></footer>
+<script src="config.js"></script>
+<script src="assets/common.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
